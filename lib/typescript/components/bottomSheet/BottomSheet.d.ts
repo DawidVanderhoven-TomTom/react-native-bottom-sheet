@@ -12,6 +12,7 @@ declare const BottomSheet: React.MemoExoticComponent<React.ForwardRefExoticCompo
     enableContentPanningGesture?: boolean | undefined;
     enableHandlePanningGesture?: boolean | undefined;
     animateOnMount?: boolean | undefined;
+    style?: Animated.AnimateStyle<Pick<any, string | number | symbol>> | undefined;
     animatedPosition?: Animated.Value<number> | undefined;
     animatedIndex?: Animated.Value<number> | undefined;
     onChange?: ((index: number) => void) | undefined;

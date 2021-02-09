@@ -1,0 +1,24 @@
+import React from 'react';
+import Animated from 'react-native-reanimated';
+import type { BottomSheetMethods } from '../../types';
+declare type BottomSheet = BottomSheetMethods;
+declare const BottomSheet: React.MemoExoticComponent<React.ForwardRefExoticComponent<{
+    index?: number | undefined;
+    snapPoints: React.ReactText[];
+    handleHeight?: number | undefined;
+    containerHeight?: number | undefined;
+    topInset?: number | undefined;
+    bottomInset?: number | undefined;
+    enableContentPanningGesture?: boolean | undefined;
+    enableHandlePanningGesture?: boolean | undefined;
+    animateOnMount?: boolean | undefined;
+    animatedPosition?: Animated.Value<number> | undefined;
+    animatedIndex?: Animated.Value<number> | undefined;
+    onChange?: ((index: number) => void) | undefined;
+    onAnimate?: ((fromIndex: number, toIndex: number) => void) | undefined;
+    handleComponent?: React.FC<import("../bottomSheetHandle").BottomSheetHandleProps> | null | undefined;
+    backdropComponent?: React.FC<import("../bottomSheetBackdrop").BottomSheetBackdropProps> | null | undefined;
+    backgroundComponent?: React.FC<import("../bottomSheetBackground").BottomSheetBackgroundProps> | null | undefined;
+    children: string | number | boolean | {} | React.ReactElement<any, string | ((props: any) => React.ReactElement<any, string | any | (new (props: any) => React.Component<any, any, any>)> | null) | (new (props: any) => React.Component<any, any, any>)> | React.ReactNodeArray | React.ReactPortal | React.ReactNode[] | (() => React.ReactNode) | null | undefined;
+} & import("./types").BottomSheetAnimationConfigs & React.RefAttributes<BottomSheetMethods>>>;
+export default BottomSheet;
